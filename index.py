@@ -10,7 +10,7 @@ Matrix = List[Row]
 
 
 def create_matrix(raw_matrix: str) -> Matrix:
-    """Convers a raw string into a matrix of 0 and 1"""
+    """Converts a raw string into a matrix of 0 and 1"""
 
     rows = raw_matrix.split(";")
 
@@ -52,10 +52,11 @@ def main(raw_matrix: str) -> int:
 
 
 def parse_args(args):
+    """Parse args from arguments"""
     parser = argparse.ArgumentParser(description="Returns the number of areas in a matrix.")
     parser.add_argument("matrix", 
         help='A matrix of values 0 and 1, columns are separated by commas (,) \
-            and rows are separated by semicolons (;): "1,0,1,0,1,0"')
+            and rows are separated by semicolons (;): "1,0,1;0,1,0"')
 
     return parser.parse_args(args)
 
