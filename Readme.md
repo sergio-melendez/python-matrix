@@ -8,7 +8,7 @@
 
 ## Usage
 
-- `python -m index.py "1,0,1;0,1,0"`
+- `python -m index "1,0,1;0,1,0"`
 
 ## Test
 
